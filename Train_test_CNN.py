@@ -43,7 +43,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5,), (0.5,))
 ])
 
-# Creating a dataset instance
+# Creating a dataset instance,here change your datapath
 dataset = Datasets(root_dir='./data/MC_datasets', transform=transform)
 
 # Split the dataset into training set and test set
