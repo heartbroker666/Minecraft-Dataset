@@ -74,7 +74,7 @@ class CustomCNN(nn.Module):
         x = self.fc2(x)
         return x
 
-# 训练和评估模型的函数
+# Functions to train and evaluate models
 def train_and_evaluate(model, train_loader, test_loader, epochs, learning_rate):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
